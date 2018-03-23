@@ -1,0 +1,17 @@
+.site-layout{
+    @include flex(column);
+
+
+    > .site-header{
+        min-height: 100vh;
+    }
+
+    > .site-main{
+
+    }
+
+    > .site-footer{
+
+        min-height: 600px;
+    }
+}

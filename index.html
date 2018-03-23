@@ -4,138 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Raleway:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <title>psd 34</title>
 </head>
-<body>
-    <header class="header">
-        <h1 class="header__heading">Just a Proffesional Web Hosting Services</h1>
-        <p class="header__sub-heading">modern - fast - reliable</p>
-        <form class="header__form" method="post">
-            <label for="search-domain" class="hidden">Your Domain Name...</label>
-            <input type="text" class="search-domain" id="search-domain" placeholder="Your Domain Name...">
-            <select class="select-extensions">
+<body class="site-layout">
+    <header class="site-header">
+        <h1 class="heading">Just a Proffesional Web Hosting Services</h1>
+        <p class="subheading">modern - fast - reliable</p>
+        <form class="search-form" method="post">
+            <label class="label -hidden" for="search-domain">Your Domain Name</label>
+            <input class="input" type="text" id="search-domain" placeholder="Your Domain Name...">
+            <select class="select">
                 <option value="com">.com</option>
                 <option value="pl">.pl</option>
                 <option value="it">.it</option>
                 <option value="eu">.eu</option>
             </select>
-            <input type="submit" class="button submit" value="Check Availability">
+            <input class="submit" type="submit" value="Check Availability">
         </form>
 
-        <nav class="nav">
-            <a href="" class="nav__link">MaguwoHost</a>
-            <button class="button toggle-menu" id="toggle-menu"></button>
-            <ul class="menu" id="menu">
-                <li><a href="#" class="link menu__link">Home</a></li>
-                <li><a href="#" class="link menu__link">About</a></li>
-                <li><a href="#" class="link menu__link">Pricing</a></li>
-                <li><a href="#" class="link menu__link">Domain</a></li>
-                <li><a href="#" class="link menu__link">Hosting</a></li>
+        <nav class="site-nav">
+            <a href="" class="link">MaguwoHost</a>
+            <button class="menu-toggle -hidden" id="menu-toggle">
+                <span class="line"></span>
+            </button>
+            <ul class="menu-list -main" id="menu">
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#" class="link">About</a></li>
+                <li><a href="#" class="link">Pricing</a></li>
+                <li><a href="#" class="link">Domain</a></li>
+                <li><a href="#" class="link">Hosting</a></li>
             </ul>
-            <section class="contact">
-                <h2 class="contact__heading">Do you need help? Just Email, Live chat or Call us</h2>
-                <div class="contact__container">
-                    <button class="button live-chat">Live Chat</button>
-                    <a href="tel:62846534" class="link phone-number">6284-6534</a>
+            <section class="contact-box">
+                <h2 class="heading">Do you need help? Just Email, Live chat or Call us</h2>
+                <div class="contact-action">
+                    <button class="button">Live Chat</button>
+                    <a href="tel:62846534" class="link">6284-6534</a>
                 </div>
             </section>
         </nav>
     </header>
-    <main class="main">
-        <div class="services">
-            <article class="services__webhost">
-                <h2 class="heading heading_light">#1 Webhost Services</h2>
-                <p class="paragraph paragraph_light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aliquid amet maxime sit aut blanditiis quam, earum voluptate numquam, placeat architecto quis perferendis. Eveniet ex, quod totam nisi alias illo.</p>
+    <main class="site-main">
+        <div class="services-box">
+            <article class="our-services">
+                <div class="decoration -image"></div>
+                <h2 class="heading">#1 Webhost Services</h2>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aliquid amet maxime sit aut blanditiis quam, earum voluptate numquam, placeat architecto quis perferendis. Eveniet ex, quod totam nisi alias illo.</p>
+                <button class="button">More</button>
             </article>
-            <article class="services__domain">
-                <h2 class="heading heading_light">#1 Domain Services</h2>
-                <p class="paragraph  paragraph_light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aliquid amet maxime sit aut blanditiis quam, earum voluptate numquam, placeat architecto quis perferendis. Eveniet ex, quod totam nisi alias illo.</p>
+            <article class="our-services">
+                <div class="decoration -text"></div>
+                <h2 class="heading -light">#1 Domain Services</h2>
+                <p class="paragraph  -light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aliquid amet maxime sit aut blanditiis quam, earum voluptate numquam, placeat architecto quis perferendis. Eveniet ex, quod totam nisi alias illo.</p>
+                <button class="button">More</button>
             </article>
         </div>
-        <article class="features">
-            <header class="features__header">
-                <h2 class="heading heading_dark">Our Features</h2>
-                <p class="sub-heading">Our Best Features</p>
+        <article class="our-features">
+            <header class="header-box">
+                <h2 class="heading">Our Features</h2>
+                <p class="subheading">Our Best Features</p>
             </header>
-            <div>
-                <section class="features__item">
-                    <img src="" alt="" class="img img_round">
-                    <h3 class="heading heading_fancy">Live Support</h3>
-                    <p class="paragraph paragraph_dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia, voluptatem iure iusto cumque! Maxime?</p>
-                </section>
-                <section class="features__item">
-                    <img src="" alt="" class="img img_round">
-                    <h3 class="heading heading_fancy">Cloud Technology</h3>
-                    <p class="paragraph paragraph_dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia, voluptatem iure iusto cumque! Maxime?</p>
-                </section>
-                <section class="features__item">
-                    <img src="" alt="" class="img img_round">
-                    <h3 class="heading heading_fancy">Hi Tech Database</h3>
-                    <p class="paragraph paragraph_dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia, voluptatem iure iusto cumque! Maxime?</p>
-                </section>
-                <section class="features__item">
-                    <img src="" alt="" class="img img_round">
-                    <h3 class="heading heading_fancy">Live Monitoring</h3>
-                    <p class="paragraph paragraph_dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia, voluptatem iure iusto cumque! Maxime?</p>
-                </section>
-            </div>
+            <section class="features-item">
+                <img src="" alt="" class="image -round">
+                <h3 class="heading">Live Support</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia, voluptatem iure iusto cumque! Maxime?</p>
+            </section>
+            <section class="features-item">
+                <img src="" alt="" class="image -round">
+                <h3 class="heading">Cloud Technology</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia, voluptatem iure iusto cumque! Maxime?</p>
+            </section>
+            <section class="features-item">
+                <img src="" alt="" class="image -round">
+                <h3 class="heading">Hi Tech Database</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia, voluptatem iure iusto cumque! Maxime?</p>
+            </section>
+            <section class="features-item">
+                <img src="" alt="" class="image -round">
+                <h3 class="heading">Live Monitoring</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia, voluptatem iure iusto cumque! Maxime?</p>
+            </section>
         </article>
-        <article class="clients">
-            <header class="clients__header">
-                <h2 class="heading heading_dark clients__heading">Our Clients</h2>
-                <p class="sub-heading clients__sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dicta temporibus consequuntur soluta maxime, dignissimos.</p>
+        <article class="our-clients">
+            <header class="header-box">
+                <h2 class="heading">Our Clients</h2>
+                <p class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dicta temporibus consequuntur soluta maxime, dignissimos.</p>
             </header>
-            <div class="clients__companies">
+            <div class="companies-box">
                 <div class="company"><img src="" alt="company A"></div>
                 <div class="company"><img src="" alt="company X"></div>
                 <div class="company"><img src="" alt="company U"></div>
                 <div class="company"><img src="" alt="company Z"></div>
             </div>
-            <div class="clients__opinions">
-                <blockquote class="opinion">
-                    <img src="" alt="" class="opinion__img">
-                    <p class="opinion__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus, quidem beatae dicta magnam praesentium maxime delectus reiciendis libero suscipit.</p>
-                    <footer class="opinion__person">-Anna</footer>
+            <div class="opinions-box">
+                <blockquote class="opinion-item">
+                    <img src="" alt="" class="image -round">
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus, quidem beatae dicta magnam praesentium maxime delectus reiciendis libero suscipit.</p>
+                    <footer class="footer">-Anna</footer>
                 </blockquote>
-                <blockquote class="opinion">
-                    <img src="" alt="" class="opinion__img">
-                    <p class="opinion__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus, quidem beatae dicta magnam praesentium maxime delectus reiciendis libero suscipit.</p>
-                    <footer class="opinion__person">-Anna</footer>
+                <blockquote class="opinion-item">
+                    <img src="" alt="" class="image -round">
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus, quidem beatae dicta magnam praesentium maxime delectus reiciendis libero suscipit.</p>
+                    <footer class="footer">-Anna</footer>
                 </blockquote>
-                <blockquote class="opinion">
-                    <img src="" alt="" class="opinion__img">
-                    <p class="opinion__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus, quidem beatae dicta magnam praesentium maxime delectus reiciendis libero suscipit.</p>
-                    <footer class="opinion__person">-Anna</footer>
+                <blockquote class="opinion-item">
+                    <img src="" alt="" class="image -round">
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus, quidem beatae dicta magnam praesentium maxime delectus reiciendis libero suscipit.</p>
+                    <footer class="footer">-Anna</footer>
                 </blockquote>
             </div>
         </article>
-        <article class="plans">
-            <header class="plans__header">
-                <h2 class="heading heading_light plans__heading">Do you want to view Plans & Pricing?</h2>
-                <p class="sub-heading plans__sub-heading">Follow the button in the right section.</p>
+        <article class="our-plans">
+            <header class="header-box">
+                <h2 class="heading -light">Do you want to view Plans & Pricing?</h2>
+                <p class="subheading -light ">Follow the button in the right section.</p>
             </header>
-            <button class="button plans__button"></button>
+            <button class="button"></button>
         </article>
     </main>
-    <footer class="footer">
-        <div class="footer__container">
-            <p class="paragraph footer__paragraph">Navigation</p>
-            <ul class="footer__menu">
-                <li><a href="#" class="link footer__link">Home</a></li>
-                <li><a href="#" class="link footer__link">About</a></li>
-                <li><a href="#" class="link footer__link">Domain</a></li>
-                <li><a href="#" class="link footer__link">Hosting</a></li>
-                <li><a href="#" class="link footer__link">Contact</a></li>
+    <footer class="site-footer">
+        <div class="links-box">
+            <p class="paragraph">Navigation</p>
+            <ul class="menu-list -minor">
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#" class="link">About</a></li>
+                <li><a href="#" class="link">Domain</a></li>
+                <li><a href="#" class="link">Hosting</a></li>
+                <li><a href="#" class="link">Contact</a></li>
             </ul>
-            <ul class="socials">
-                <li><a href="#" class="socials__link"><span class="social" aria-label="twitter"></span></a></li>
-                <li><a href="#" class="socials__link"><span class="social" aria-label="twitter"></span></a></li>
-                <li><a href="#" class="socials__link"><span class="social" aria-label="twitter"></span></a></li>
+            <ul class="social-list">
+                <li><a href="#" class="link"><span class="social" aria-label="twitter"></span></a></li>
+                <li><a href="#" class="link"><span class="social" aria-label="twitter"></span></a></li>
+                <li><a href="#" class="link"><span class="social" aria-label="twitter"></span></a></li>
             </ul>
-            <a href="" class="link link_to-top">Back to Top</a>
+            <a href="" class="link">Back to Top</a>
         </div>
-        <div class="copyright">
+        <div class="copyright-box">
+            <img src="" alt="" class="image">
             <p class="paragraph">Copyright 2014 Maguwohost by FikriStudio</p>
         </div>
     </footer>

@@ -1,5 +1,10 @@
 @import "./node_modules/normalize-scss/sass/normalize/import-now";
-@import 'base/all';
+@import 'foreign/all';
+
+
 @import 'mixins/all';
+@import 'base/all';
 @import 'animations/all';
+
+@import 'elements/all';
 @import 'components/all';

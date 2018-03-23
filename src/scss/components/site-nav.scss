@@ -1,0 +1,6 @@
+.site-nav{
+    @include flex(row,nowrap,space-around,center);
+    background-color: white;
+    box-sizing: border-box;
+
+}
