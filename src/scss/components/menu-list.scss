@@ -1,0 +1,48 @@
+.menu-list{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    &.-main{
+        @include flex(column,nowrap,space-around,center,center);
+    }
+    &.-minor{
+
+    }
+    > .item{
+        @include flex(row,nowrap,center,center,center);
+        box-sizing: border-box;
+        text-transform: uppercase;
+        width: 70px;
+    }
+    > .item > .link{
+        text-decoration: none;
+        padding: 5px;
+        color: $port-gore;
+        transition: $transition-time-hover;
+        font-size: 2em;
+    }
+    > .item > .link:hover,
+    > .item > .link:focus{
+        color: $bright-sun;
+        font-weight: 700;
+    }
+
+
+    @include screen(desktop){
+        &.-main{
+            @include flex(row,nowrap,space-around,center,center);
+        }
+        &.-minor{
+
+        }
+
+        > .item{
+            @include flex(row);
+            text-transform: uppercase;
+        }
+        > .item > .link{
+            font-size: 1em;
+            padding: 2px;
+        }
+    }
+}

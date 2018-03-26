@@ -1,0 +1,26 @@
+.menu-toggle{
+    position: relative;
+    box-sizing: border-box;
+    background: transparent;
+    border: 0;
+    > .line{
+        width: 100%;
+        position: absolute;
+        height: 20%;
+        left: 0;
+        background-color: black;
+    }
+    > .line.-first{
+        top:0;
+    }
+    > .line.-second{
+        top: 40%;
+    }
+    > .line.-third{
+        top: 80%;
+    }
+
+    @include screen(desktop){
+        display: none;
+    }
+}

@@ -1,9 +1,5 @@
 @import 'media';
-
-@mixin flex($direction: row, $wrap: nowrap, $justify: flex-start, $align-items: flex-start, $align-content: flex-start){
-    display: flex;
-    flex-flow: $direction $wrap;
-    justify-content: $justify;
-    align-items: $align-items;
-    align-content: $align-content;
-}
+@import 'display';
+// @import 'position';
+// @import 'margins';
+// @import 'dimensions';

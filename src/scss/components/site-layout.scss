@@ -5,13 +5,19 @@
     > .site-header{
         min-height: 100vh;
     }
-
+    > .site-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1em 2%;
+    }
     > .site-main{
 
     }
-
     > .site-footer{
 
         min-height: 600px;
     }
+
 }

@@ -422,7 +422,8 @@ html {
       font-size: 22px; } }
 
 body {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  color: #202242; }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
@@ -449,6 +450,9 @@ h6 {
 p {
   line-height: 1.5em; }
 
+button, input, optgroup, select, textarea {
+  font-family: "Raleway", sans-serif; }
+
 .site-layout {
   display: flex;
   flex-flow: column nowrap;
@@ -457,17 +461,89 @@ p {
   align-content: flex-start; }
   .site-layout > .site-header {
     min-height: 100vh; }
-  .site-layout > .site-footer {
-    min-height: 600px; }
-
-.site-header {
-  box-sizing: border-box; }
-  .site-header > .site-nav {
+  .site-layout > .site-nav {
     position: fixed;
     top: 0;
     left: 0;
-    height: 150px;
-    width: 100%; }
+    width: 100%;
+    padding: 1em 2%; }
+  .site-layout > .site-footer {
+    min-height: 600px; }
+
+.menu-toggle {
+  position: relative;
+  box-sizing: border-box;
+  background: transparent;
+  border: 0; }
+  .menu-toggle > .line {
+    width: 100%;
+    position: absolute;
+    height: 20%;
+    left: 0;
+    background-color: black; }
+  .menu-toggle > .line.-first {
+    top: 0; }
+  .menu-toggle > .line.-second {
+    top: 40%; }
+  .menu-toggle > .line.-third {
+    top: 80%; }
+  @media only screen and (min-width: 1024px) {
+    .menu-toggle {
+      display: none; } }
+
+.menu-list {
+  margin: 0;
+  padding: 0; }
+  .menu-list.-main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center; }
+  .menu-list > .item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    width: 70px; }
+  .menu-list > .item > .link {
+    text-decoration: none;
+    padding: 5px;
+    color: #202242;
+    transition: 0.3s;
+    font-size: 2em; }
+  .menu-list > .item > .link:hover,
+  .menu-list > .item > .link:focus {
+    color: #ffe13e;
+    font-weight: 700; }
+  @media only screen and (min-width: 1024px) {
+    .menu-list.-main {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center; }
+    .menu-list > .item {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+      text-transform: uppercase; }
+    .menu-list > .item > .link {
+      font-size: 1em;
+      padding: 2px; } }
+
+.site-header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  box-sizing: border-box; }
 
 .site-nav {
   display: flex;
@@ -475,7 +551,55 @@ p {
   justify-content: space-around;
   align-items: center;
   align-content: flex-start;
-  background-color: white;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: white; }
+  .site-nav > .logo-link {
+    width: 30%; }
+  .site-nav > .menu-toggle {
+    z-index: 60;
+    height: 20px;
+    width: 20px; }
+  .site-nav > .menu-list {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    height: 70vh; }
+  .site-nav > .contact-box {
+    position: fixed;
+    top: 70vh;
+    z-index: 50;
+    width: 100%;
+    height: 30vh; }
+  @media only screen and (min-width: 1024px) {
+    .site-nav > .logo-link {
+      width: 20%; }
+    .site-nav > .menu-toggle {
+      display: none; }
+    .site-nav > .menu-list {
+      width: 40%;
+      position: static;
+      height: 150px; }
+    .site-nav > .contact-box {
+      position: static;
+      z-index: 50;
+      width: 30%;
+      height: auto; } }
+
+.logo-link {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 2em;
+  color: #202242;
+  text-decoration: none; }
+  .logo-link > .image {
+    height: 1em;
+    width: auto;
+    margin-right: 0.6em; }
+  .logo-link > .bold {
+    font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map*/

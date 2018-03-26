@@ -1,11 +1,6 @@
 .site-header{
+    @include flex(column, nowrap, center, center, center);
     box-sizing: border-box;
 
-    > .site-nav{
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 150px;
-        width: 100%;
-    }
+
 }
