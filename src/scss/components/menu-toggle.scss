@@ -3,6 +3,7 @@
     box-sizing: border-box;
     background: transparent;
     border: 0;
+    padding: 12px;
     > .line{
         width: 100%;
         position: absolute;
@@ -11,15 +12,34 @@
         background-color: black;
     }
     > .line.-first{
+        transition: 0.5s;
         top:0;
     }
     > .line.-second{
+        transition: 0.5s;
         top: 40%;
     }
     > .line.-third{
+        transition: 0.5s;
         top: 80%;
     }
-
+    &.-close{
+        > .line.-first{
+            opacity: 0;
+            transition: 0.5s;
+            transform: scaleY(0);
+        }
+        > .line.-second{
+            top: 40%;
+            transform: rotate(45deg) scaleX(1.2);
+            transition: 0.5s;
+        }
+        > .line.-third{
+            top: 40%;
+            transform: rotate(-45deg) scaleX(1.2);
+            transition: 0.5s;
+        }
+    }
     @include screen(desktop){
         display: none;
     }

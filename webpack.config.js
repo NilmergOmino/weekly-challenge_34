@@ -39,7 +39,7 @@ module.exports = {
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     // minify css at the end
-                    use: [{loader: 'css-loader', options: {minimize: false}}, 'postcss-loader']
+                    use: [{loader: 'css-loader', options: {minimize: true}}, 'postcss-loader']
 
                 })
             },
@@ -48,11 +48,11 @@ module.exports = {
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     // minify css at the end
-                    use: [{loader: 'css-loader', options: {minimize: false}}, 'postcss-loader', 'sass-loader']
+                    use: [{loader: 'css-loader', options: {minimize: true}}, 'postcss-loader', 'sass-loader']
                 })
             },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|gif|svg)$/,
                 use: [
                     {
                         loader: 'file-loader',

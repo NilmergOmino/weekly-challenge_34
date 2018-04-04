@@ -1,0 +1,46 @@
+.header-box{
+    > .heading{
+        margin-top: 0;
+        margin-bottom: 0.2em;
+        font-size: 3em;
+    }
+    > .subheading{
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    > .heading.-light,
+    > .subheading.-light,{
+        color: $silver-chalice;
+    }
+
+    &.-clients{
+        text-align: center;
+        > .heading{
+            font-size: 2em;
+        }
+        > .subheading{
+            max-width: 300px;
+            font-size: 1em;
+        }
+    }
+    &.-plans{
+        text-align: center;
+        > .heading{
+            font-size: 2em;
+            color: white;
+        }
+        > .subheading{
+            color: $dolphin;
+            font-size: 1em;
+        }
+    }
+    @include screen(desktop){
+        &.-clients{
+            text-align: left;
+        }
+        &.-plans{
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.social-list{
+    @include flex(row,nowrap,center,center,center);
+    padding: 0;
+    list-style: none;
+    .link{
+        text-decoration: none;
+    }
+    .link.-center{
+        margin: 0 1em;
+    }
+    .social{
+        color: $bright-sun;
+        font-size: 1.1em;
+    }
+    .link:hover .social,
+    .link:focus .social{
+        color: white;
+    }
+}

@@ -4,45 +4,79 @@
     background-color: white;
     &.-main{
         @include flex(column,nowrap,space-around,center,center);
+        transition: 0.5s;
+        transform-origin: center right;
     }
-    &.-minor{
-
+    &.-toggle{
+        transform: scaleX(0) translateX(100%);
+        transition: 0.5s;
     }
-    > .item{
+    &.-main > .item{
         @include flex(row,nowrap,center,center,center);
         box-sizing: border-box;
         text-transform: uppercase;
         width: 70px;
     }
-    > .item > .link{
+    &.-main > .item > .link{
         text-decoration: none;
-        padding: 5px;
+        padding: 2px;
         color: $port-gore;
         transition: $transition-time-hover;
-        font-size: 2em;
+        font-size: 1.6em;
     }
-    > .item > .link:hover,
-    > .item > .link:focus{
+    &.-main > .item > .link:hover,
+    &.-main > .item > .link:focus{
         color: $bright-sun;
         font-weight: 700;
     }
-
-
+    &.-minor{
+        @include flex(row,nowrap,center,center,center);
+        background-color: transparent;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &.-minor > .item{
+        display: block;
+    }
+    &.-minor .link{
+        @include flex(row,nowrap,center,center,center);
+        color: white;
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 0.5em;
+        transition: $transition-time-hover;
+    }
+    &.-minor .link:hover,
+    &.-minor .link:focus{
+        color: $bright-sun;
+    }
     @include screen(desktop){
         &.-main{
             @include flex(row,nowrap,space-around,center,center);
         }
-        &.-minor{
-
+        &.-toggle{
+            transform: scaleX(1) translateX(0);
+            transition: 0s;
         }
-
-        > .item{
+        &.-main > .item{
             @include flex(row);
             text-transform: uppercase;
         }
-        > .item > .link{
+        &.-main > .item > .link{
             font-size: 1em;
             padding: 2px;
+        }
+        &.-minor{
+            @include flex(column,nowrap,center,center,center);
+        }
+        &.-minor .link{
+            @include flex(row,nowrap,center,center,center);
+            padding: 0.7em 0 0.7em 0.7em;
+            border-top: 1px solid rgba(white , 0.16);
+        }
+        &.-minor .link.-first{
+            border-top: none;
         }
     }
 }

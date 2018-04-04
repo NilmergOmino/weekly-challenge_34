@@ -1,0 +1,71 @@
+.our-services{
+    @include flex(column,nowrap,center,center,center);
+    box-sizing: border-box;
+    padding: 75px 10%;
+    color: white;
+    text-align: center;
+
+    &.-webhost{
+        background-color: $port-gore;
+    }
+    &.-domain{
+        background-color: $bright-sun;
+    }
+
+    > .decoration{
+        height: 170px;
+        width: 100%;
+        @include flex(row,nowrap,center,center,center);
+    }
+    > .decoration.-image{
+        background-image: url(../assets/img/webhost-decoration.png);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    > .decoration.-text:after{
+        content: '.com';
+        font-size: 5.5em;
+        color: $port-gore;
+        font-weight: bold;
+    }
+    > .heading{
+        margin-top: 1.6em;
+        margin-bottom: 0.5em;
+    }
+    > .paragraph{
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        font-size: 1em;
+    }
+    > .button{
+        box-sizing: border-box;
+        padding: 1em 2.5em;
+        font-weight: 700;
+        background-color: transparent;
+        border: 3px solid white;
+        margin-top: 1em;
+        color: white;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    > .button:hover,
+    > .button:focus{
+        color: $port-gore;
+        background-color: white;
+    }
+    @include screen(tablet){
+        padding: 75px 15%;
+    }
+    @include screen(desktop){
+        &.-webhost{
+            padding: 120px 5% 120px 10%;
+        }
+        &.-domain{
+            padding: 120px 10% 120px 5%;
+        }
+        > .decoration.-text:after{
+            font-size: 8em;
+        }
+    }
+}

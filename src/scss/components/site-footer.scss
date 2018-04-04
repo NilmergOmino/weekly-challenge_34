@@ -1,0 +1,31 @@
+.site-footer{
+    @include flex(column,wrap,center,center,center);
+    box-sizing: border-box;
+    padding: 45px 1.5em;
+    padding-bottom: 30px;
+    position: relative;
+    background-color: rgba($port-gore, 0.9);
+    > .links-box{
+        width: 150px;
+        box-sizing: border-box;
+    }
+    > .address-box{
+        width: 90%;
+    }
+    > .copyright-box{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    @include screen(desktop){
+        @include flex(row,wrap,space-around,flex-start,center);
+        padding: 120px 5em;
+        padding-bottom: 50px;
+        > .links-box{
+            width: 150px
+        }
+        > .address-box{
+            width: 60%;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.opinion-item{
+    background-color: $wild-sand;
+    padding: 1.5em;
+    position: relative;
+    > .image{
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        transform: translateY(50%);
+    }
+    > .paragraph{
+        margin-top: 0;
+        color: $silver-chalice;
+        font-style: italic;
+        font-size: 0.9em;
+        line-height: 2em;
+    }
+    > .footer{
+        color: $dove-gray;
+        font-weight: 700;
+    }
+}

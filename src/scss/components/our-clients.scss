@@ -1,0 +1,32 @@
+.our-clients{
+    @include flex(column,wrap,center,center,center);
+    padding: 75px 1.5em;
+    > .header-box{
+        box-sizing: border-box;
+    }
+    > .companies-box{
+        box-sizing: border-box;
+        margin-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    > .opinions-box{
+        box-sizing: border-box;
+    }
+    @include screen(desktop){
+        @include flex(row,wrap,center,flex-start,center);
+        padding: 120px 5em;
+
+        > .header-box{
+            width: 30%;
+        }
+        > .companies-box{
+            width: 70%;
+            margin-top: 0;
+            margin-bottom: 80px;
+        }
+        > .opinions-box{
+            width: 100%;
+        }
+    }
+}

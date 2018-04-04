@@ -1,0 +1,6 @@
+.companies-box{
+    @include flex(row,wrap,center,center,center);
+    > .company{
+        margin: 1em;
+    }
+}

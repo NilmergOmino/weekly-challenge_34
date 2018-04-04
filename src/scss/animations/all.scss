@@ -1,0 +1,8 @@
+@keyframes fade-in{
+    0%{transform: scaleX(0) translateX(100%);}
+    100%{transform: scaleX(1) translateX(0);}
+}
+@keyframes fade-out{
+    0%{transform: scaleX(1) translateX(0);}
+    100%{transform: scaleX(0) translateX(100%);}
+}

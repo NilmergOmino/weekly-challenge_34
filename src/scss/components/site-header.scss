@@ -1,6 +1,53 @@
 .site-header{
     @include flex(column, nowrap, center, center, center);
     box-sizing: border-box;
+    position: relative;
+    padding: 75px 10px;
+    background-image: url(../assets/img/balloon-min.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(black, 0.3);
+        z-index: 0;
+    }
+    > .heading{
+        text-align: center;
+        color: white;
+        position: relative;
+        z-index: 1;
+        margin: 0.4em 0;
+        font-weight: 400;
+    }
+    > .subheading{
+        text-align: center;
+        color: white;
+        position: relative;
+        z-index: 1;
+        font-size: 2em;
+        margin: 0.4em 0;
+    }
+    > .decoration{
+        position: relative;
+        z-index: 1;
+        margin: 4em 0;
+    }
+    > .search-form{
+        max-width: 90%;
+        position: relative;
+        z-index: 1;
+        margin: 0.4em 0;
+    }
 
-
+    @include screen(desktop){
+        padding-bottom: 120px;
+        padding-top: 175px;
+    }
 }

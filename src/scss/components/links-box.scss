@@ -1,0 +1,30 @@
+.links-box{
+    @include flex(column,nowrap,center,center,center);
+    color: white;
+    > .paragraph{
+        font-weight: 700;
+    }
+    > .menu-list{
+        width: 100%;
+    }
+    > .social-list{
+        margin-bottom: 65px;
+        margin-top: 30px;
+    }
+    > .link{
+        color: white;
+        text-decoration: none;
+        font-size: 0.7em;
+        transition: $transition-time-hover;
+    }
+    > .link:hover,
+    > .link:focus{
+        color: $bright-sun;
+    }
+    @include screen(desktop){
+        @include flex(column,nowrap,center,flex-end,center);
+        > .menu-list{
+            width: 65px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.services-box{
+    @include flex(column,nowrap,center,center,center);
+    > .our-services{
+
+        width: 100%;
+    }
+
+    @include screen(desktop){
+        @include flex(row,nowrap,center,stretch,center);
+        > .our-services{
+            width: 50%;
+        }
+    }
+}

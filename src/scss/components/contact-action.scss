@@ -1,0 +1,37 @@
+.contact-action{
+    @include flex(row, nowrap, center,center,center);
+    box-sizing: border-box;
+    > .button{
+        font-weight: 600;
+        padding: 0.7em 2em;
+        border: none;
+        background-color: $bright-sun;
+        cursor: pointer;
+        order: 1;
+    }
+    > .button:hover,
+    > .button:focus{
+        background-color: darken($bright-sun, 10%);
+    }
+    &:after{
+        content: '';
+        display: block;
+        height: 100%;
+        border-right: 1px solid rgba(black, 0.2);
+        order: 2;
+        margin: 0 1.2em;
+    }
+    > .link{
+        @include flex(row,nowrap,center,center,center);
+        padding-top: 0.2em;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-size: 1.8em;
+        color: $port-gore;
+        text-decoration: none;
+        order: 3;
+    }
+    > .link:hover{
+        color: lighten($port-gore, 20%);
+    }
+}

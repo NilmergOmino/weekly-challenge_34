@@ -1,0 +1,14 @@
+.opinions-box{
+    @include flex(column,nowrap,center,center,center);
+    > .opinion-item{
+        margin: 1em 0;
+        max-width: 370px;
+        margin-bottom: 50px;
+    }
+    @include screen(desktop){
+        @include flex(row,nowrap,space-between,flex-start,center);
+        > .opinion-item.-center{
+            margin: 1em 1em;
+        }
+    }
+}

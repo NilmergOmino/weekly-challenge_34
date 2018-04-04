@@ -1,0 +1,26 @@
+.features-item{
+    @include flex(column,nowrap,center,center,center);
+    &:before{
+        content: '';
+        display: block;
+        height: 3px;
+        width: 70px;
+        background-color: rgba($port-gore, 0.5);
+        order: 2;
+        margin: 14px 0;
+    }
+    > .image{
+        order: 1;
+        border-radius: 50%;
+        margin: 14px 0;
+    }
+    > .heading{
+        order: 3;
+        color: $ripe-lemon;
+        margin: 14px 0;
+    }
+    > .paragraph{
+        order: 4;
+        margin: 14px 0;
+    }
+}

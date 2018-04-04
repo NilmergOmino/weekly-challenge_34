@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Raleway:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/fontello/css/fontello.css">
     <link rel="stylesheet" href="dist/css/style.css">
     <title>psd 34</title>
 </head>
@@ -12,6 +13,7 @@
     <header class="site-header">
         <h1 class="heading">Just a Proffesional Web Hosting Services</h1>
         <p class="subheading">modern - fast - reliable</p>
+        <img src="dist/assets/img/decoration-1.png" alt="" class="decoration">
         <form class="search-form" method="post">
             <label class="label -hidden" for="search-domain">Your Domain Name</label>
             <input class="input" type="text" id="search-domain" placeholder="Your Domain Name...">
@@ -21,10 +23,11 @@
                 <option value="it">.it</option>
                 <option value="eu">.eu</option>
             </select>
+
             <input class="submit" type="submit" value="Check Availability">
         </form>
     </header>
-    <nav class="site-nav">
+    <nav class="site-nav" id="site-nav">
         <a href="" class="logo-link">
             <img src="dist/assets/img/logo.svg" alt="" class="image">
             Maguwo<span class="bold">Host</span>
@@ -34,15 +37,15 @@
             <span class="line -second"></span>
             <span class="line -third"></span>
         </button>
-        <ul class="menu-list -main" id="menu">
+        <ul class="menu-list -main -toggle" id="menu">
             <li class="item"><a href="#" class="link">Home</a></li>
             <li class="item"><a href="#" class="link">About</a></li>
             <li class="item"><a href="#" class="link">Pricing</a></li>
             <li class="item"><a href="#" class="link">Domain</a></li>
             <li class="item"><a href="#" class="link">Hosting</a></li>
         </ul>
-        <section class="contact-box">
-            <h2 class="heading">Do you need help? Just Email, Live chat or Call us</h2>
+        <section class="contact-box -toggle" id="contact-box">
+            <h2 class="heading" id="contact-box-heading">Do you need help? Just Email, Live chat or Call us</h2>
             <div class="contact-action">
                 <button class="button">Live Chat</button>
                 <a href="tel:62846534" class="link">6284-6534</a>
@@ -51,13 +54,13 @@
     </nav>
     <main class="site-main">
         <div class="services-box">
-            <article class="our-services">
+            <article class="our-services -webhost">
                 <div class="decoration -image"></div>
                 <h2 class="heading">#1 Webhost Services</h2>
                 <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aliquid amet maxime sit aut blanditiis quam, earum voluptate numquam, placeat architecto quis perferendis. Eveniet ex, quod totam nisi alias illo.</p>
                 <button class="button">More</button>
             </article>
-            <article class="our-services">
+            <article class="our-services -domain">
                 <div class="decoration -text"></div>
                 <h2 class="heading -light">#1 Domain Services</h2>
                 <p class="paragraph  -light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aliquid amet maxime sit aut blanditiis quam, earum voluptate numquam, placeat architecto quis perferendis. Eveniet ex, quod totam nisi alias illo.</p>
@@ -70,82 +73,91 @@
                 <p class="subheading">Our Best Features</p>
             </header>
             <section class="features-item">
-                <img src="" alt="" class="image -round">
+                <img src="dist/assets/img/features-item-1.png" alt="" class="image">
                 <h3 class="heading">Live Support</h3>
                 <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia, voluptatem iure iusto cumque! Maxime?</p>
             </section>
             <section class="features-item">
-                <img src="" alt="" class="image -round">
+                <img src="dist/assets/img/features-item-2.png" alt="" class="image">
                 <h3 class="heading">Cloud Technology</h3>
                 <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia, voluptatem iure iusto cumque! Maxime?</p>
             </section>
             <section class="features-item">
-                <img src="" alt="" class="image -round">
+                <img src="dist/assets/img/features-item-3.png" alt="" class="image">
                 <h3 class="heading">Hi Tech Database</h3>
                 <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia, voluptatem iure iusto cumque! Maxime?</p>
             </section>
             <section class="features-item">
-                <img src="" alt="" class="image -round">
+                <img src="dist/assets/img/features-item-4.png" alt="" class="image">
                 <h3 class="heading">Live Monitoring</h3>
                 <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum mollitia, voluptatem iure iusto cumque! Maxime?</p>
             </section>
         </article>
         <article class="our-clients">
-            <header class="header-box">
+            <header class="header-box -clients">
                 <h2 class="heading">Our Clients</h2>
-                <p class="subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dicta temporibus consequuntur soluta maxime, dignissimos.</p>
+                <p class="subheading -light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dicta temporibus consequuntur soluta maxime, dignissimos.</p>
             </header>
             <div class="companies-box">
-                <div class="company"><img src="" alt="company A"></div>
-                <div class="company"><img src="" alt="company X"></div>
-                <div class="company"><img src="" alt="company U"></div>
-                <div class="company"><img src="" alt="company Z"></div>
+                <div class="company"><img src="dist/assets/img/company-1.png" alt="company A"></div>
+                <div class="company"><img src="dist/assets/img/company-2.png" alt="company X"></div>
+                <div class="company"><img src="dist/assets/img/company-3.png" alt="company U"></div>
+                <div class="company"><img src="dist/assets/img/company-4.png" alt="company Z"></div>
             </div>
             <div class="opinions-box">
                 <blockquote class="opinion-item">
-                    <img src="" alt="" class="image -round">
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus, quidem beatae dicta magnam praesentium maxime delectus reiciendis libero suscipit.</p>
+                    <img src="dist/assets/img/client-1.png" alt="" class="image">
+                    <p class="paragraph">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus, quidem beatae dicta magnam praesentium maxime delectus reiciendis libero suscipit."</p>
+                    <footer class="footer">-Anna</footer>
+                </blockquote>
+                <blockquote class="opinion-item -center">
+                    <img src="dist/assets/img/client-1.png" alt="" class="image">
+                    <p class="paragraph">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus, quidem beatae dicta magnam praesentium maxime delectus reiciendis libero suscipit."</p>
                     <footer class="footer">-Anna</footer>
                 </blockquote>
                 <blockquote class="opinion-item">
-                    <img src="" alt="" class="image -round">
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus, quidem beatae dicta magnam praesentium maxime delectus reiciendis libero suscipit.</p>
-                    <footer class="footer">-Anna</footer>
-                </blockquote>
-                <blockquote class="opinion-item">
-                    <img src="" alt="" class="image -round">
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus, quidem beatae dicta magnam praesentium maxime delectus reiciendis libero suscipit.</p>
+                    <img src="dist/assets/img/client-1.png" alt="" class="image">
+                    <p class="paragraph">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusamus, quidem beatae dicta magnam praesentium maxime delectus reiciendis libero suscipit."</p>
                     <footer class="footer">-Anna</footer>
                 </blockquote>
             </div>
         </article>
         <article class="our-plans">
-            <header class="header-box">
-                <h2 class="heading -light">Do you want to view Plans & Pricing?</h2>
-                <p class="subheading -light ">Follow the button in the right section.</p>
+            <header class="header-box -plans">
+                <h2 class="heading">Do you want to view Plans & Pricing?</h2>
+                <p class="subheading">Follow the button in the right section.</p>
             </header>
-            <button class="button"></button>
+            <button class="button">Plans & Pricing</button>
         </article>
     </main>
     <footer class="site-footer">
+        <div class="address-box">
+            <img src="dist/assets/img/footer-map.png" alt="" class="image -map">
+            <img src="dist/assets/img/pointer.png" alt="" class="image -pointer">
+            <address class="address">
+                Yogyakarta, Indonesia<br>
+                55282
+            </address>
+        </div>
         <div class="links-box">
             <p class="paragraph">Navigation</p>
             <ul class="menu-list -minor">
-                <li><a href="#" class="link">Home</a></li>
-                <li><a href="#" class="link">About</a></li>
-                <li><a href="#" class="link">Domain</a></li>
-                <li><a href="#" class="link">Hosting</a></li>
-                <li><a href="#" class="link">Contact</a></li>
+                <li class="item"><a href="#" class="link -first">Home</a></li>
+                <li class="item"><a href="#" class="link">About</a></li>
+                <li class="item"><a href="#" class="link">Domain</a></li>
+                <li class="item"><a href="#" class="link">Hosting</a></li>
+                <li class="item"><a href="#" class="link">Contact</a></li>
             </ul>
             <ul class="social-list">
-                <li><a href="#" class="link"><span class="social" aria-label="twitter"></span></a></li>
-                <li><a href="#" class="link"><span class="social" aria-label="twitter"></span></a></li>
-                <li><a href="#" class="link"><span class="social" aria-label="twitter"></span></a></li>
+                <li><a href="#" class="link"><span class="social icon-twitter" aria-label="twitter"></span></a></li>
+                <li><a href="#" class="link -center"><span class="social icon-instagram" aria-label="instagram"></span></a></li>
+                <li><a href="#" class="link"><span class="social icon-gplus" aria-label="google plus"></span></a></li>
             </ul>
             <a href="" class="link">Back to Top</a>
         </div>
+
         <div class="copyright-box">
-            <img src="" alt="" class="image">
+            <img src="dist/assets/img/footer-shape.png" alt="" class="image">
             <p class="paragraph">Copyright 2014 Maguwohost by FikriStudio</p>
         </div>
     </footer>

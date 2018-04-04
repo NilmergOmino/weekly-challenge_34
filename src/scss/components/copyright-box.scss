@@ -1,0 +1,5 @@
+.copyright-box{
+    @include flex(column,nowrap,center,center,center);
+    color: white;
+    text-align: center;
+}

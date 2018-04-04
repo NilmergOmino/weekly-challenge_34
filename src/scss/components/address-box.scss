@@ -1,0 +1,37 @@
+.address-box{
+    position: relative;
+    > .image.-map{
+        width: 100%;
+    }
+    > .image.-pointer{
+        position: absolute;
+        width: 32px;
+        height: 46px;
+        top: calc(68.5% - 46px);
+        left: calc(77.5% - 16px);
+    }
+    > .address{
+        position: absolute;
+        width: 200px;
+        top: calc(68.5% - 46px);
+        left: calc(77.5% - 216px - 1em);
+        text-align: right;
+        color: white;
+        font-weight: 700;
+        line-height: 1.5em;
+        font-size: 1.1em;
+    }
+    @include screen(desktop){
+        > .address{
+            position: absolute;
+            width: 250px;
+            top: calc(68.5% - 46px);
+            left: calc(77.5% + 16px + 1em);
+            text-align: left;
+            color: white;
+            font-weight: 700;
+            line-height: 1.5em;
+            font-size: 1.1em;
+        }
+    }
+}

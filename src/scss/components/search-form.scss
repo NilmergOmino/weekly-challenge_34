@@ -1,0 +1,57 @@
+.search-form{
+    @include flex(column,nowrap,center,center,center);
+    box-sizing: border-box;
+    padding: 1.2em;
+    background-color: rgba(white, 0.5);
+    .label{
+        display: none;
+    }
+    .input,
+    .select,
+    .submit{
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%;
+        padding: 0 1.2em;
+        border: 0;
+        border-radius: 0;
+        background-color: $bright-sun;
+        height: 3em;
+        text-align: left;
+        vertical-align: center;
+    }
+    .input{
+        background-color: white;
+    }
+    .select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url(../assets/img/select-icon.png);
+        background-position: 85% center;
+        background-repeat: no-repeat;
+        padding-right: 2.5em;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .submit{
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        border-top: 1px solid white;
+    }
+    .submit:hover,
+    .submit:focus,
+    .select:hover,
+    .select:focus{
+        background-color: darken($bright-sun, 10%);
+    }
+
+
+    @include screen(tablet){
+        @include flex(row,nowrap,center,center,center);
+        .submit{
+            border-top: none;
+            border-left: 1px solid white;
+        }
+    }
+}

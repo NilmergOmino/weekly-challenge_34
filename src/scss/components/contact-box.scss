@@ -1,0 +1,39 @@
+.contact-box{
+    @include flex(column, nowrap,center,center,center);
+    box-sizing: border-box;
+    padding-left: 10px;
+    border-top: 1px solid rgba(black,0.1);
+    background-color: white;
+    transition: 0.5s;
+    transform-origin: center right;
+    &.-toggle{
+        transform: scaleX(0) translateX(100%);
+        transition: 0.5s;
+    }
+    > .heading{
+        text-align: center;
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+    > .contact-action{
+        margin: 5px 0;
+    }
+
+    @include screen(desktop){
+        @include flex(column, nowrap,center,center,center);
+        border-top: none;
+        border-left: 1px solid rgba(black,0.1);
+        &.-toggle{
+            transform: scaleX(1) translateX(0);
+        }
+        > .heading{
+            font-size: 0.8em;
+            margin-bottom: 10px;
+            transition: 0.5s;
+        }
+        > .heading.-fixed{
+            margin: 0;
+            transition: 0.5s;
+        }
+    }
+}

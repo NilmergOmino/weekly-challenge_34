@@ -1,0 +1,35 @@
+.our-plans{
+    @include flex(column,nowrap,center,center,center);
+    padding: 75px 1.5em;
+    background-color: $port-gore;
+    > .header-box{
+        width: 80%;
+    }
+    > .button{
+        margin-top: 40px;
+        box-sizing: border-box;
+        padding: 1.5em 1em;
+        border: 5px solid white;
+        color: $port-gore;
+        background-color: $bright-sun;
+        font-size: 1.2em;
+        font-weight: 700;
+        cursor: pointer;
+        transition: $transition-time-hover;
+        width: 230px;
+    }
+    > .button:hover{
+        background-color: white;
+    }
+    @include screen(desktop){
+        @include flex(row,nowrap,center,center,center);
+        padding: 120px 5em;
+        > .header-box{
+            width: 60%;
+        }
+        > .button{
+            margin-left: 40px;
+            margin-top: 0;
+        }
+    }
+}
