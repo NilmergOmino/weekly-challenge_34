@@ -53,5 +53,10 @@
             border-top: none;
             border-left: 1px solid white;
         }
+        .input,
+        .select,
+        .submit{
+            width: auto;
+        }
     }
 }
